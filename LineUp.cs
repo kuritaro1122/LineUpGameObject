@@ -44,7 +44,7 @@ internal class LineUp : MonoBehaviour {
 
     void OnDrawGizmos() {
         List<Vector3> pos = new List<Vector3>();
-        pos.Add(this.offset); //objを画面に用意しなくてもできるように
+        pos.Add(this.offset);
         foreach (var c in copy) {
             foreach (var p in pos.ToArray()) {
                 var newPos = c.CopiedPos(p);
